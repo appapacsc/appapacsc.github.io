@@ -165,7 +165,15 @@
 	function submitted() {
 		// Place appropriate submit handling here
 		//alert("The action has been submitted!");
-		document.getElementById("embeddedAction").style.display = "none";
+		//document.getElementById("embeddedAction").style.display = "none";
+		
+        // Remove the embeddedAction tag
+		var container = document.getElementById('embeddedDiv');
+        var embeddedTag = document.getElementById(embeddedAction);
+        if (embeddedTag) {
+          embeddedTag.destroy();
+          container.removeChild(embeddedTag);
+        }
 		
 	}
 
@@ -1216,7 +1224,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="col-lg-9 hidden-xs">
+                                 <div id="embeddedDiv" class="col-lg-9 hidden-xs">
                                     <a class="left-heading" href="https://www.westpac.com.au/personal-banking/solutions/?fid=HP:PML::wbc:www:pers:solutions_personalsolutions">New Loan Request</a> 
 									<appian-action id="embeddedAction" processModelUuid="0002e5fe-7ce7-8000-1c9c-7f0000014e7a"></appian-action>
 									<!--<appian-report reportUrlStub="_qAsLA"></appian-report>-->
