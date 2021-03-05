@@ -161,6 +161,16 @@
                </style>
                <script src="files/RC37f6a2ba4f594b1d8fc0793e1a05395b-source.js" async=""></script><script src="files/RCc6e146baa5224ceb88d85c64bfa0d413-source.js" async=""></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/apps/settings/wcm/designs/wbc/clientlib-all/assets/js/components/web/utils/embedDataUri.js" src="files/embedDataUri.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="files/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/web/ui/auto-complete" src="files/auto-complete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/web/ui/safety-button" src="files/safety-button.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lib/slick/slick.min" src="files/slick.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/web/ui/carousel-energy" src="files/carousel-energy.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/web/utils/equalHeights" src="files/equalHeights.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/web/ui/nav-left" src="files/nav-left.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="components/web/ui/traverser" src="files/traverser.js"></script><script src="files/RC6a7a89a6207547fcad4eeb9e9c3fc599-source.js" async=""></script>
 			   <script src="https://apacdemo.appiancloud.com/suite/tempo/ui/sail-client/embeddedBootstrap.nocache.js" id="appianEmbedded" data-themeidentifier="wbc"></script>
+			   <script>
+	function submitted() {
+		// Place appropriate submit handling here
+		alert("The task has been submitted!");
+	}
+
+	window.onload = function() {
+		document.getElementById("embeddedAction").addEventListener("submit", submitted, false);
+	}
+</script>
             </head>
             <body class="home">
                <!-- site container -->
@@ -1206,7 +1216,7 @@
                                  </div>
                                  <div class="col-lg-9 hidden-xs">
                                     <a class="left-heading" href="https://www.westpac.com.au/personal-banking/solutions/?fid=HP:PML::wbc:www:pers:solutions_personalsolutions">New Loan Request</a> 
-									<appian-action processModelUuid="0002e5fe-7ce7-8000-1c9c-7f0000014e7a"></appian-action>
+									<appian-action id="embeddedAction" processModelUuid="0002e5fe-7ce7-8000-1c9c-7f0000014e7a"></appian-action>
 									<!--<appian-report reportUrlStub="_qAsLA"></appian-report>-->
                                     <!--
 									BLOCKED SECTION
