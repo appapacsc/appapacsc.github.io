@@ -1,0 +1,70 @@
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+}
+.strike>div {
+    position: relative;
+    display: inline-block
+}
+.strike>div:before,
+.strike>div:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 2px;
+    background: #ccc
+}
+.side-lines:before {
+    right: 100%
+}
+.side-lines:after {
+    left: 100%
+}
+.line-text span {
+    padding: 0 25px;
+    font-size: 15px;
+    color: #888686
+}
+.line-arrow span {
+    position: relative;
+    display: inline-block;
+    content: "";
+    width: 11px;
+    height: 12px;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg) translate(-50%) skew(10deg, 10deg);
+    transform-origin: left;
+    border-style: solid;
+    border-color: #ccc;
+    left: 7px;
+    top: 2px
+}
+.divider-line {
+    overflow: hidden;
+    text-align: center
+}
+.divider-line:before,
+.divider-line:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%
+}
+.divider-line:before {
+    margin-left: -50%
+}
+.divider-line:after {
+    margin-right: -50%
+}
+@media only screen and (max-width: 768px) {
+    .line-text:before,
+    .line-text:after {
+        display: none
+    }
+}

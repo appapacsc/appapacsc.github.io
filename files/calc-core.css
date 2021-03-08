@@ -1,0 +1,497 @@
+.column-container .container-fluid .calc-body .section > .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.calc-body small {
+    display: block;
+    margin-bottom: 3px;
+    color: #878d91;
+    font-size: 12px;
+    padding-top: 6px;
+}
+
+.calc-body .hide-div{
+    display: none;
+}
+
+.calc-body .has-danger.alert-form .input-group-input,
+.has-danger.alert-form .input-addon-input {
+    border-color: #c40000
+}
+
+.calc-body .input-group.input-group-block {
+    display: table;
+    width: 100%;
+}
+.calc-body .input-addon .input-addon-select-wrapper .input-addon-select {
+    height: 34px;
+	
+}
+.calc-body .input-addon .input-addon-select-wrapper{
+	border-radius:6px;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .calc-body .text-right {
+        text-align: left;
+    }
+    .calc-body .text-left {
+        text-align: left;
+    }
+    .calc-body .text-center {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .calc-body .text-right {
+        text-align: left;
+    }
+    .calc-body .text-left {
+        text-align: left;
+    }
+    .calc-body .text-center {
+        text-align: left;
+    }
+}
+
+.calc-body .input-addon.input-addon-block {
+    display: table;
+    width: 100%;
+}
+
+.calc-body .input-addon.input-addon-block .input-addon-label,
+.input-addon.input-addon-block .input-addon-btn,
+.input-addon.input-addon-block .input-addon-select-wrapper {
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+}
+
+.calc-body .input-addon.input-addon-block .input-addon-input-custom {
+    display: block;
+    width: 100%;
+    padding-left: 42px
+}
+.calc-body .input-addon.input-addon-block .input-addon-input {
+    display: block;
+    width: 100%;
+}
+.calc-body .input-addon .input-addon-input.hasLeftAttrib {
+    padding-left: 30px
+}
+.calc-body .input-addon.input-addon-block .input-addon-label,
+.input-addon.input-addon-block .input-addon-btn,
+.input-addon.input-addon-block .input-addon-select-wrapper {
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+}
+
+.calc-body .input-group.input-group-block {
+    display: table;
+    width: 100%;
+}
+
+.calc-body .input-group.input-group-block .input-group-addon,
+.input-group.input-group-block .input-group-input {
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+}
+.calc-body .input-field{
+	height:42px;
+}
+.calc-body .field-label{
+		font-size:14px;
+}
+.calc-body  small{
+	 font-size:14px;
+}
+.calc-body .input-group.input-group-block .input-group-input {
+    display: block;
+}
+
+.calc-body .input-group.input-group-block .input-group-addon {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.calc-body .button-wrapper .basic {
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+.calc-body .field-wrapper .input-field {
+    left: 0;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.calc-body .field-wrapper {
+    position: relative;
+    border-radius: 6px;
+}
+
+.calc-body .field-wrapper .btn-minus,
+.calc-body .field-wrapper .btn-plus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
+    z-index: 2;
+    width: 70px;
+    background-color: transparent;
+    color: #2d373e;
+    border-right: 1px solid #d7d2cb;
+    border-radius: 0;
+    border-color: #d7d2cb;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.calc-body .field-wrapper .btn-plus {
+    left: auto;
+    right: 0;
+    border-right: 0;
+    border-left: 1px solid #d7d2cb;
+}
+.calc-body .input-addon .input-addon-label .text-label {
+    height: 34px;
+    width: 5%;
+    padding: 6px 0;
+    text-align: center;
+    left: 7px;
+    top: 1px;
+    background-color: #f4f3f0;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid #d7d2cb;
+    clip: auto;
+    z-index: 2;
+    font-size: 14px;
+}
+.calc-body .field-label{
+	 padding-top:8px;
+	 display:inline-block;
+}
+@media (min-width: 768px){
+    .calc-body .input-addon .input-addon-label .text-label {
+        left: 13px;
+    }
+}
+/*popover css*/
+.popover-wrapper {
+    display: inline-block;
+    position: relative
+}
+.is-open .popover.popover-dismissible:after {
+    content: " ";
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent
+}
+.is-open.is-bottom .popover-popup {
+    bottom: auto;
+    top: 100%;
+    margin-top: 23px
+}
+.is-open.is-bottom .popover-popup:before,
+.is-open.is-bottom .popover-popup:after {
+    bottom: auto;
+    top: -36px;
+    border-top-color: transparent;
+    border-bottom: 18px solid #575f65
+}
+.is-open.is-bottom .popover-popup:after {
+    display: none
+}
+.popover-popup {
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 100%;
+    width: 282px;
+    margin: 0 0 21px -131px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: 1px solid #575f65;
+    z-index: 105;
+    background-color: #fff;
+    pointer-events: all;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.popover-popup:focus {
+    outline: none
+}
+.is-keyboarduser .popover-popup:focus {
+    outline: 2px dotted #000;
+    outline-offset: .5rem
+}
+.popover-popup:before,
+.popover-popup:after {
+    content: " ";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    margin-left: -21px;
+    width: 0;
+    border-top: 18px solid #fff;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    font-size: 0;
+    line-height: 0;
+    z-index: 105
+}
+.popover-popup:before {
+    bottom: -19px;
+    border-top-color: #575f65;
+    z-index: 105
+}
+.popover-popup .popover-popup-title,
+.popover-popup .popover-popup-body {
+    display: block;
+    white-space: normal;
+    padding: 10px 12px;
+    margin: 0;
+    text-align: left;
+    color: #2d373e;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857143
+}
+.popover-popup .popover-popup-title {
+    background-color: #575f65;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400
+}
+.popover-popup .popover-popup-body {
+    min-height: 60px;
+    padding-bottom: 18px
+}
+.js .popover-popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease
+}
+.no-js .popover-popup {
+    position: static;
+    margin-left: 12px;
+    box-shadow: none;
+    float: right
+}
+.no-js .popover-popup:before,
+.no-js .popover-popup:after {
+    display: none
+}
+.is-open .popover-popup {
+    opacity: 1;
+    visibility: visible
+}
+/*! Tooltips v2.0.0 WBC */
+
+.tooltip {
+    position: relative
+}
+.tooltip:focus {
+    outline: none
+}
+.is-keyboarduser .tooltip:focus {
+    outline: 2px dotted #000;
+    outline-offset: .5rem
+}
+.tooltip:after {
+    content: " (" attr(title) ")";
+    display: inline-block
+}
+.icon-size-sm.tooltip:after {
+    padding-left: 18px
+}
+.icon-size-md.tooltip:after {
+    padding-left: 34px
+}
+.icon-size-lg.tooltip:after {
+    padding-left: 66px
+}
+.tooltip.icon.icon-size-sm {
+    width: auto;
+    min-width: 16px
+}
+.tooltip.icon.icon-size-md {
+    width: auto;
+    min-width: 32px
+}
+.tooltip.icon.icon-size-lg {
+    width: auto;
+    min-width: 64px
+}
+.tooltip .tooltip-bubble {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    margin: 0 0 6px -150px;
+    color: #fff;
+    background-color: #000;
+    padding: 7px;
+    width: 300px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease, visibility .2s ease;
+    transition-delay: 100ms;
+    z-index: 100
+}
+.tooltip .tooltip-bubble:after {
+    content: " ";
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 50%
+}
+@media (min-width: 768px) {
+    .tooltip:after {
+        display: none
+    }
+    .tooltip:hover,
+    .tooltip:focus,
+    .tooltip:active {
+        cursor: help
+    }
+    .tooltip:hover .tooltip-bubble,
+    .tooltip:focus .tooltip-bubble,
+    .tooltip:active .tooltip-bubble {
+        visibility: visible;
+        opacity: .9
+    }
+}
+.input-addon.input-addon-block label.input-addon-select-wrapper.custom-block{
+    width: auto;
+}
+.calc-body .button.parbase{
+    margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+    .calc-body .button.parbase{
+        margin-bottom: 0;
+    }
+    .calc-body .button-wrapper.text-left a:nth-child(2) {
+        margin-top: 0;
+    }
+}
+/*.calc-body .button-wrapper.text-left a:nth-child(2) {
+margin-top: 12px;
+}*/
+.calc-body .stackSelected p{
+    margin: 0;
+}
+.calc-body .stackSelected p:not(:first-child) label {
+    margin-top: 14px;
+}
+.calc-body .input-group.input-group-block .input-group-input:disabled, .calc-body .input-addon.input-addon-block .input-addon-input:disabled{
+    background-color: #f9f9f8;
+    color: #575f65;
+    cursor: not-allowed;
+}
+.calc-body .input-addon-btn:disabled, .calc-body .input-addon-select:disabled{
+    cursor: not-allowed;
+}
+/* START - For Widget-441*/
+.calc-body .input-addon.input-addon-block .input-addon-custom, .calc-body .input-addon .input-addon-custom {
+   // padding-left: 30px
+}
+
+.calc-body .input-addon.alert-form {
+    margin-bottom:0;
+}
+/* END - For Widget-441*/
+/*widget-365 ul li font size reduces*/
+.calc-body .text-danger{
+    color: #c40000 !important;
+	margin: 6px 0px 6px 0px;
+}
+/*widget 364 update button container*/
+.calc-body .action-button-right, .calc-body .action-button-left{    
+    float: left;
+}
+.calc-body .custom-block .button-wrapper, .cq-Editable-dom .calc-body .custom-block{
+    min-width: 144px;
+}
+.calc-body .button-wrapper .btn-soft{
+    width: 100%;
+    margin: 0;
+    display: block;
+    white-space: normal;
+    height: auto;
+}
+.calc-body .button-wrapper .basic {
+    white-space: normal;
+    height: auto;
+    word-wrap: break-word;
+}
+.calc-body .action-button-left{
+    margin-right: 18px;
+}
+@media (max-width: 480px){
+    .calc-body .action-button-left{
+        margin-right: 0;
+    }
+}
+.calc-body .center-parent{
+    display: flex;
+    justify-content: center;
+}
+.calc-body .left-parent{
+    display: flex;
+    justify-content: left;
+}
+.calc-body .button-wrapper {
+    margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+    .calc-body .center-parent, .calc-body .left-parent{
+        flex-wrap: wrap;
+    }
+    .calc-body .action-button-left.custom-block .button-wrapper.text-left a:nth-child(2){
+        margin-top: 0;
+    }
+    .calc-body .custom-block{
+        width: 100%;
+    }
+    .calc-body .action-button-left {
+        margin-right: 0;
+        order: 2;
+    }
+    .calc-body .action-button-right{
+        order: 1;
+        margin-bottom: 18px;
+    }
+    .calc-body .button-container{
+        display: flex;
+        flex-flow: column;
+    }
+}     
