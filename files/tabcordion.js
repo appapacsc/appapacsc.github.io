@@ -1,0 +1,1 @@
+define(["jquery","components/web/utils/urlParams"],function(a,b){"use strict";function c(){var c=b.getUrlHash();""!==c&&a("#"+c+"-tab a.js-collapsible").trigger("click")}return a(window).on("hashchange",function(){c()}),{highlightTab:c}});/* Version:19.0 ba49bd89d*/
