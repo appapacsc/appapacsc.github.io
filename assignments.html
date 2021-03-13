@@ -283,9 +283,14 @@
                
                	
                	var myObj = JSON.parse(xmlHttp.responseText);
-               for (x in myObj) {
-               alert(myObj[x].caseid);
-               	  }
+    txt = "<div><br></div><table border='1'><tr><td>CaseId</td><td>Type</td><td>Status</td></tr>"
+    for (x in myObj) {
+      txt += "<tr><td>" + myObj[x].caseid + "</td><td>" + myObj[x].type +  "</td><td>" + myObj[x].status + "</td></tr>";
+	  
+	  
+    }
+    txt += "</table>"
+    document.getElementById("requests-sd").innerHTML = txt;
                }
             </script>
             <body class="general has-left-nav"  onload="myFunction()">
