@@ -285,11 +285,12 @@
                	var myObj = JSON.parse(xmlHttp.responseText);
     txt = "<div><br></div><table border='1'><tr><td>CaseId</td><td>Type</td><td>Status</td></tr>"
     for (x in myObj) {
-      txt += "<tr><td>" + myObj[x].caseid + "</td><td>" + myObj[x].type +  "</td><td>" + myObj[x].status + "</td></tr>";
+      
+	  <!--txt += "<tr><td>" + myObj[x].caseid + "</td><td>" + myObj[x].type +  "</td><td>" + myObj[x].status + "</td></tr>";-->
+	  txt += "<div class=""article-list-item""><h4 class=""article-list-heading""><a title=""Credit Reporting Policy"">Credit Reporting Policy</a></h4><p>Our Credit Reporting Policy explains how we manage your credit information. Our handling of credit information is regulated by the Privacy Act and the Privacy (Credit Reporting) Code (known as the 'CR Code').</p></div>"
 	  
 	  
     }
-    txt += "</table>"
     document.getElementById("requests-sd").innerHTML = txt;
                }
             </script>
