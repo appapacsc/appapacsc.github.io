@@ -277,11 +277,11 @@
                var txt;
                var myObj = JSON.parse(xmlHttp.responseText);
 			   
-               txt = "<div><br></div><table border='1'><tr><td>CaseId</td><td>Type</td><td>Status</td></tr>"
+               <!--txt = "<div><br></div><table border='1'><tr><td>CaseId</td><td>Type</td><td>Status</td></tr>"-->
                for (x in myObj) {
       
 	  <!--txt += "<tr><td>" + myObj[x].caseid + "</td><td>" + myObj[x].type +  "</td><td>" + myObj[x].status + "</td></tr>";-->
-			   txt += "<div class='article-list-item'><h4 class='article-list-heading'><a title=" + myObj[x].id + ">" + myObj[x].id + "</a></h4><p>Our Credit Reporting Policy explains how we manage your credit information. Our handling of credit information is regulated by the Privacy Act and the Privacy (Credit Reporting) Code (known as the 'CR Code').</p></div>"
+			   txt += "<div class='article-list-item'><h4 class='article-list-heading'><a title=" + myObj[x].id + ">" + myObj[x].id + "</a></h4><p>Type: " + myObj[x].type + "<br>Status: " + myObj[x].status + "<br>Created At: " + myObj[x].createdAt + "<br>Completed At: " + myObj[x].completedAt + "</p></div>"
 	  
                }
 			   console.log(txt);
